@@ -99,6 +99,7 @@ Vagrant.configure(2) do |config|
     mv Rocket.Chat-master rocket.chat
 
     cd ./rocket.chat
+    meteor npm install
     meteor build --server "$HOST" --directory .
 
     cd ./bundle/programs/server
